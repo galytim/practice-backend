@@ -1,6 +1,6 @@
 class MainlyFacilitiesController < ApplicationController
   before_action :set_mainly_facility, only: %i[ show edit update destroy ]
-
+  skip_before_action :verify_authenticity_token
   # GET /mainly_facilities or /mainly_facilities.json
   def index
     @mainly_facilities = MainlyFacility.all
@@ -53,10 +53,8 @@ class MainlyFacilitiesController < ApplicationController
   def destroy
     @mainly_facility.destroy
 
-    respond_to do |format|
-      format.html { redirect_to mainly_facilities_url, notice: "Mainly facility was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    @mainly_facilities = MainlyFacility.all
+    render json: @mainly_facilities
   end
 
   private
