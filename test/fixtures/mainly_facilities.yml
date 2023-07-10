@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: 1
+  initCost: 1
+  dateStartUsing: 2023-07-10
+  dateEndUsing: 2023-07-10
+  codeEndUsing: 1
+  regulatoryTermServices: 1
+  accumulatedDepreciaton: 1
+  residualValue: 1
+
+two:
+  name: MyString
+  code: 1
+  initCost: 1
+  dateStartUsing: 2023-07-10
+  dateEndUsing: 2023-07-10
+  codeEndUsing: 1
+  regulatoryTermServices: 1
+  accumulatedDepreciaton: 1
+  residualValue: 1

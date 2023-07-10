@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mainly_facility %>
+
+<div>
+  <%= link_to "Edit this mainly facility", edit_mainly_facility_path(@mainly_facility) %> |
+  <%= link_to "Back to mainly facilities", mainly_facilities_path %>
+
+  <%= button_to "Destroy this mainly facility", @mainly_facility, method: :delete %>
+</div>

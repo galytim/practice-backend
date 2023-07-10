@@ -1,0 +1,2 @@
+class MainlyFacility < ApplicationRecord
+end
